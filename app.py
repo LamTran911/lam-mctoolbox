@@ -14,7 +14,7 @@ from rq.job import Job
 from worker import conn
 
 
-timeout = 3600
+timeout = 36000
 q = Queue(connection=conn, default_timeout=timeout)
 
 #app = Flask(__name__)
