@@ -34,4 +34,4 @@ urllib3==1.26.6
 Werkzeug==2.0.1
 wrapt==1.12.1
 redis==4.1.0
-rq==1.10.1
+rq>=0.13
