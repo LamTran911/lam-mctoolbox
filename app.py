@@ -303,6 +303,7 @@ def upload_file():
                 job = q.enqueue(e2e, inputs, job_timeout=timeout)
                 status = job.get_status()
                 print(job.id, status)
+                print("Hello")
                 return redirect(url_for('result', id=job.id))
                        
 
@@ -339,6 +340,7 @@ def get_template(data, refresh=False):
 def result(id):
     job = Job.fetch(id, connection=conn)
     status = job.get_status()
+    print("Hello2")
     print(job.id, status)
     if status == 'failed':
         job.cancel()
