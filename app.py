@@ -2,7 +2,7 @@ import os
 from werkzeug.utils import secure_filename
 from flask import Flask,flash,request,redirect,send_file,render_template, Response, url_for, render_template_string
 import pandas as pd
-import numpy as np
+import numpy as nppipi
 import re
 import zipfile
 from io import BytesIO
