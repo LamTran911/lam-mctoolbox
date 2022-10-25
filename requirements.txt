@@ -35,4 +35,4 @@ Werkzeug==2.0.1
 wrapt==1.12.1
 redis==4.1.0
 rq==1.10.1
-zipfile==3.2.0
+zipfile==3.5
