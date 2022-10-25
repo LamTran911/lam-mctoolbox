@@ -300,6 +300,7 @@ def upload_file():
             else:
                 print("-----E2E-----")
                 inputs = (filename, request.form['filespecs'], df)
+                from app import e2e
                 job = q.enqueue(e2e, inputs, job_timeout=timeout)
                 status = job.get_status()
                 print(job.id, status)
